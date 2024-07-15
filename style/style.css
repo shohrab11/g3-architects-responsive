@@ -260,49 +260,73 @@ main {
     text-align: left;
 
 }
-.fact-area{
-    display:flex;
+
+.fact-area {
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 95px;
     margin-top: 50px;
 }
+
 .fact-card {
     width: 180px;
     height: 180px;
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
-    
+
 }
-.fact-padding{
-    padding: 20px;  
+
+.fact-padding {
+    padding: 20px;
 }
+
 /* Fact  section end here   */
 
 /* sponsors  section start here   */
 
-.sponsors-section{
+.sponsors-section {
     margin-top: 100px;
 
 }
-.sponsors-section h2{
+
+.sponsors-section h2 {
     text-align: center;
     margin: 10px 0;
 }
-.sponsors-image{
+
+.sponsors-image {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    gap: 20px;
+
 }
-.sponsors-image img{
+
+.sponsors-image img {
     filter: grayscale(100%);
 }
+
 /* sponsors  section end here   */
+
+footer {
+    margin: 100px auto;
+    text-align: center;
+    max-width: 1080px;
+    height: 100px;
+    height: auto;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: #FFF4E7;
+}
+
 /* responsive for mobile   */
 
+/* Footer section end here   */
 @media screen and (max-width: 576px) {
+
+    .sponsors-image,
     .fact-area,
     .featured-section,
     .quick-list,
@@ -330,6 +354,7 @@ main {
         max-width: 100%;
         height: auto;
     }
+
     .btn {
         margin-top: -200px;
         margin-left: 0px;
