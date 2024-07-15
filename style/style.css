@@ -251,9 +251,6 @@ main {
 
 /* Fact  section start here   */
 
-
-
-/* Fact  section end here   */
 .section-fact {
     margin-top: 50px;
 
@@ -279,10 +276,30 @@ main {
     
 }
 .fact-padding{
-    padding: 20px;
-   
+    padding: 20px;  
 }
+/* Fact  section end here   */
 
+/* sponsors  section start here   */
+
+.sponsors-section{
+    margin-top: 100px;
+
+}
+.sponsors-section h2{
+    text-align: center;
+    margin: 10px 0;
+}
+.sponsors-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.sponsors-image img{
+    filter: grayscale(100%);
+}
+/* sponsors  section end here   */
 /* responsive for mobile   */
 
 @media screen and (max-width: 576px) {
@@ -313,7 +330,6 @@ main {
         max-width: 100%;
         height: auto;
     }
-
     .btn {
         margin-top: -200px;
         margin-left: 0px;
