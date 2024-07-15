@@ -18,8 +18,36 @@ body {
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 30px;
-    
+
 }
+
+.text-black {
+    color: #131313;
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-yellow {
+    color: #FF900E;
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-heading {
+    color: #727272;
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .btn-primary {
     border-radius: 8px;
     background-color: #FF900E;
@@ -77,15 +105,16 @@ nav ul li a {
 /* nav section end here   */
 
 /* hero section start here    */
-.hero-text{
+.hero-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 760px;
+    max-width: 760px;
     margin: 0 auto;
-   padding-bottom: 40px; 
+    padding-bottom: 40px;
 }
+
 .hero-title {
     color: #131313;
     text-align: center;
@@ -95,14 +124,70 @@ nav ul li a {
     font-weight: 700;
     line-height: normal;
     padding-bottom: 30px;
-    
+
 }
-.hero-image{
+
+.hero-image {
     width: 80%;
     margin: 0 auto;
 }
-.hero-banner-image{
+
+.hero-banner-image {
     width: 100%;
     padding-bottom: 30px;
 
+}
+
+/* hero section end here    */
+
+/* main section start here    */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* quick list section start here    */
+.quick-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+
+}
+.quick-list-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.quick-list-image img {
+    max-width: 256px;
+}
+
+.quick-list-text {
+    margin-left: 40px;
+}
+
+.hide{
+    display: none;
+}
+/* quick list section end here   */
+
+/* responsive for mobile   */
+
+@media screen and (max-width: 576px) {
+    .quick-list,
+    nav,
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-description {
+        width: 90%;
+    }
+    .quick-list-image{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
