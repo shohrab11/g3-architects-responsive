@@ -24,7 +24,6 @@ body {
 .text-black {
     color: #131313;
     font-family: "Work Sans";
-    font-size: 45px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -33,18 +32,36 @@ body {
 .text-yellow {
     color: #FF900E;
     font-family: "Work Sans";
-    font-size: 45px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
 }
 
 .section-heading {
     color: #727272;
     font-family: "Work Sans";
-    font-size: 45px;
+    font-size: 2.8rem;
     font-style: normal;
     font-weight: 500;
+    line-height: normal;
+}
+
+.section-subtitle {
+    color: #131313;
+    font-family: "Work Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.section-title {
+    color: #131313;
+    font-family: "Work Sans";
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
     line-height: normal;
 }
 
@@ -154,6 +171,7 @@ main {
     margin: 40px 0;
 
 }
+
 .quick-list-image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -168,14 +186,70 @@ main {
     margin-left: 40px;
 }
 
-.hide{
+.hide {
     display: none;
 }
+
 /* quick list section end here   */
 
+/* Featured  section start here   */
+.featured-section {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+}
+
+.left-border {
+    border-left: 5px solid #FF900E;
+
+}
+
+.featured-image {
+    max-width: 570px;
+    height: auto;
+}
+
+.featured-image img {
+    max-width: 570px;
+    height: auto;
+}
+
+.featured-card>.section-description,
+.featured-text-section>p {
+    text-align: left;
+}
+
+.featured-card {
+    padding: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+
+}
+.featured-card>p{
+    margin-bottom: 0px;
+}
+.experience {
+    color: #FFF;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.btn {
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+/* Featured  section end here   */
 /* responsive for mobile   */
 
 @media screen and (max-width: 576px) {
+    .featured-section,
     .quick-list,
     nav,
     nav ul {
@@ -186,8 +260,22 @@ main {
     .section-description {
         width: 90%;
     }
-    .quick-list-image{
-        display:grid;
+
+    .quick-list-image {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .featured-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .featured-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .btn {
+        margin-top: -200px;
+        margin-left: 20px;
     }
 }
