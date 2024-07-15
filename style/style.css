@@ -9,6 +9,31 @@ body {
 }
 
 /* shared style  */
+.section-description {
+    color: #727272;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 30px;
+    
+}
+.btn-primary {
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #FFF;
+    padding: 10px 15px;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
 
 /* nav section start here   */
 header {
@@ -16,29 +41,68 @@ header {
     background-color: rgba(255, 144, 14, 0.10);
     margin: 0 auto;
 }
+
 .brand-name {
     color: #131313;
     text-align: center;
     font-family: "Work Sans";
-    font-size: 45px;
+    font-size: 2.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
-nav{
+
+nav {
     display: flex;
-    margin: 0 150px;
+    width: 80%;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
 }
+
 nav ul {
     list-style: none;
     display: flex;
 }
-nav ul li{
-   margin-right: 30px;
+
+nav ul li {
+    margin-right: 30px;
 }
+
 nav ul li a {
-    text-decoration: none;   
+    text-decoration: none;
+}
+
+/* nav section end here   */
+
+/* hero section start here    */
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 760px;
+    margin: 0 auto;
+   padding-bottom: 40px; 
+}
+.hero-title {
+    color: #131313;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 30px;
+    
+}
+.hero-image{
+    width: 80%;
+    margin: 0 auto;
+}
+.hero-banner-image{
+    width: 100%;
+    padding-bottom: 30px;
+
 }
