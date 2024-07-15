@@ -360,3 +360,20 @@ footer {
         margin-left: 0px;
     }
 }
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .sponsors-image,
+    .fact-area,
+    .featured-section,
+    .quick-list,
+    nav,
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn {
+        margin-top: -200px;
+        margin-left: 150px;
+    }
+
+}
+    
